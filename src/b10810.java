@@ -16,7 +16,7 @@ public class b10810 {
 			b = sc.nextInt();
 			c = sc.nextInt();
 			
-			for(int j = a; j <= b;  )
+//			for(int j = a; j <= b;  )
 		}
 	}
 }
