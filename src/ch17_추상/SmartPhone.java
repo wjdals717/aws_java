@@ -39,7 +39,4 @@ public class SmartPhone extends SmartDevice implements Button{
 		// TODO Auto-generated method stub
 		
 	}
-	
-	
-	
 }

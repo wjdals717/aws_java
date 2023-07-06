@@ -8,6 +8,5 @@ public class SlaverMain {
 		System.out.println(slave.getAge());
 		new Slave(null);
 		
-		
 	}
 }

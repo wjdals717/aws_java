@@ -20,5 +20,9 @@ public class KoreaUserMain {
 		koreaUser3.setUserId(1);
 		//전부 다 같음
 		
+		System.out.println(koreaUser);
+		System.out.println(koreaUser2);
+		System.out.println(koreaUser3);
+		
 	}
 }

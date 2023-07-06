@@ -8,6 +8,6 @@ public class MessageUtil {
 		System.out.println("메일을 전송합니다.");
 	}
 	public static void sendFile() {
-		System.out.println("메일을 전송합니다.");	
+		System.out.println("파일을 전송합니다.");	
 	}
 }

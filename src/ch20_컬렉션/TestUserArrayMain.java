@@ -8,6 +8,6 @@ public class TestUserArrayMain {
 		testUsers[1] = TestUser.builder().username("bbb").password("1111").build();
 		testUsers[2] = TestUser.builder().username("ccc").password("2222").build();
 		
-		
 	}
+	
 }
