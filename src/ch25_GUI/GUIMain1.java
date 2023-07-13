@@ -21,8 +21,8 @@ public class GUIMain1 extends JFrame {
 	private JTextField usernameTextField;
 	private JPasswordField PasswordTextField;
 	private CardLayout maincardLayout;
-	private JPanel mainPanel;
-	private JPanel LoginPanel;
+	private JPanel loginPanel;
+	private JPanel homePanel;
 
 	/**
 	 * Launch the application.
@@ -52,28 +52,27 @@ public class GUIMain1 extends JFrame {
 		/* <<<< mainCardPane >>>> */
 		mainCardPane = new JPanel();							//JPanel 객체 생성
 		maincardLayout = new CardLayout(0, 0);
-		
-		mainCardPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		mainCardPane.setLayout(maincardLayout);
+		mainCardPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(mainCardPane);
 		
-		/* <<<< mainPanel >>>> */
-		mainPanel = new JPanel();
-		mainCardPane.add(mainPanel, "panel");
-		mainPanel.setLayout(null);
+		/* <<<< loginPanel >>>> */
+		loginPanel = new JPanel();
+		mainCardPane.add(loginPanel, "loginPanel");
+		loginPanel.setLayout(null);
 		
 		/* <<<< usernameTextField >>>> */
 		usernameTextField = new JTextField();
 		usernameTextField.setBounds(143, 44, 134, 21);
-		mainPanel.add(usernameTextField);
+		loginPanel.add(usernameTextField, "username");
 		usernameTextField.setColumns(10);
 		
 		/* <<<< PasswordTextField >>>> */
 		PasswordTextField = new JPasswordField();
 		PasswordTextField.setBounds(143, 80, 134, 21);
 		PasswordTextField.setColumns(10);
-		mainPanel.add(PasswordTextField);
+		loginPanel.add(PasswordTextField);
 		
 		/* <<<< signinBtn >>>> */
 		JButton signinBtn = new JButton("Login");
@@ -88,15 +87,15 @@ public class GUIMain1 extends JFrame {
 					return;
 				}
 				JOptionPane.showMessageDialog(mainCardPane, "환영합니다", "로그인 성공", JOptionPane.PLAIN_MESSAGE);
-				maincardLayout.show(mainCardPane, "LoginPanel");
+				maincardLayout.show(mainCardPane, "homePanel");
 			}
 		});
 		signinBtn.setBounds(168, 114, 88, 23);
-		mainPanel.add(signinBtn);
+		loginPanel.add(signinBtn);
 		
-		/* <<<< loginPanel >>>> */
-		LoginPanel = new JPanel();
-		mainCardPane.add(LoginPanel, "LoginPanel");
-		LoginPanel.setLayout(null);
+		/* <<<< homePanel >>>> */
+		homePanel = new JPanel();
+		homePanel.setLayout(null);
+		mainCardPane.add(homePanel, "homePanel");
 	}
 }

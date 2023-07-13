@@ -28,7 +28,6 @@ public class MapList {
 		customers.add(data1);
 		customers.add(data2);
 		
-			
 		for(Map<String, Object> customer : customers) {
 			for(String key: customer.keySet()) {
 				System.out.print(key + "=");

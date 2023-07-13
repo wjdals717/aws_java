@@ -35,5 +35,16 @@ public class Casting {
 		for(int i = 0; i < programs.length; i++) {
 			programs[i].develop();
 		}
+		
+		for(int i = 0; i < programs.length; i++) {
+			if(programs[i].getClass() == Java.class){
+				Java java = (Java) programs[i];
+				java.garbageCollection();
+			}else if(programs[i].getClass() == C.class){
+				C c = (C)programs[i];
+				c.defineStructure();
+			}
+		}
+		
 	}
 }
