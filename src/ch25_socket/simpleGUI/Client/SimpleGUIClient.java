@@ -77,7 +77,7 @@ public class SimpleGUIClient extends JFrame {
 		});
 	}
 
-	public SimpleGUIClient() {
+	private SimpleGUIClient() {
 		
 		username = JOptionPane.showInputDialog(chattingRoomPanel, "아이디를 입력하세요");
 		
